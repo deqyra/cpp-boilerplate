@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clean", "type": "shell",
+            "command": "powershell \"${workspaceFolder}/scripts/clean.ps1\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build"
+        },
+        {
+            "label": "Generate", "type": "shell",
+            "command": "powershell \"${workspaceFolder}/scripts/generate.ps1\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build"
+        },
+        {
+            "label": "Build", "type": "shell",
+            "command": "powershell \"${workspaceFolder}/scripts/build.ps1\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": [ "$msCompile" ]
+        },
+        {
+            "label": "Rebuild", "type": "shell",
+            "command": "powershell \"${workspaceFolder}/scripts/rebuild.ps1\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build",
+            "problemMatcher": [ "$msCompile" ]
+        }
+    ]
+}

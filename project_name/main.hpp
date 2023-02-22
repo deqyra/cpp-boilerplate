@@ -1,0 +1,4 @@
+#ifndef <PROJECT_NAME>__MAIN_HPP
+#define <PROJECT_NAME>__MAIN_HPP
+
+#endif//<PROJECT_NAME>__MAIN_HPP

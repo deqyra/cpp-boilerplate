@@ -1,0 +1,35 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Clean", "type": "shell",
+            "command": "sh \"${workspaceFolder}/scripts/clean.sh\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build"
+        },
+        {
+            "label": "Generate", "type": "shell",
+            "command": "sh \"${workspaceFolder}/scripts/generate.sh\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build"
+        },
+        {
+            "label": "Build", "type": "shell",
+            "command": "sh \"${workspaceFolder}/scripts/build.sh\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": { "kind": "build", "isDefault": true },
+            "problemMatcher": [ "$msCompile" ]
+        },
+        {
+            "label": "Rebuild", "type": "shell",
+            "command": "sh \"${workspaceFolder}/scripts/rebuild.sh\"",
+            "options": { "cwd": "${workspaceFolder}/build" },
+            "presentation": { "clear": true, "showReuseMessage": false },
+            "group": "build",
+            "problemMatcher": [ "$msCompile" ]
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+CompileFlags:
+    Remove: "-I"
+    Add: [
+        "-I<project_directory>/",
+        "-I<project_directory>/external/include"
+    ]
