@@ -1,0 +1,5 @@
+CompileFlags:
+    Remove: "-I"
+    Add: [
+        "-I<project_directory>/<project_name>"
+    ]
